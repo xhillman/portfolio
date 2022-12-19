@@ -1,0 +1,116 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #212427;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #212427;
+  padding-top: 3rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-family: 'Dosis', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  font-family: 'Titillium Web', sans-serif;
+  color: #f7f7f7;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 550px;
+  /* text-align: center; */
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* margin-top: 2rem; */
+  padding-inline-start: 0;
+}
+
+.tech-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  font-family: 'Titillium Web', sans-serif;
+} 
+
+@media (max-width: 768px) {
+  .about {
+    height: 100%;
+    padding-top: 1rem;
+  }
+  .photo {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .about {
+    height: 100%;
+    /* width: 100%; */
+    padding-bottom: 1rem;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 95vw; */
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-text {
+    font-size: 1rem;
+    max-width: 300px;
+    text-align: center;
+  }
+  .tech-list-item {
+    font-size: 1rem;
+  }
+}

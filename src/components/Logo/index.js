@@ -1,17 +1,17 @@
-import { Text, MantineProvider } from '@mantine/core'
+import { Text, MantineProvider, Title } from '@mantine/core'
 import './logo.css'
 
 const Logo = () => {
   return (
     <MantineProvider theme= {{headings: {fontFamily: 'Dosis, sans-serif'}}}>
-      <Text
-        component='h2'
+      <Title
+        order={2}
         variant='gradient'
         gradient={{ from: 'green', to: 'blue' }}
         className='logo'
       >
         xh.
-      </Text>
+      </Title>
     </MantineProvider>
   )
 }

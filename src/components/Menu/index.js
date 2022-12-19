@@ -1,4 +1,4 @@
-import {Group, Button} from '@mantine/core'
+import { Group, Button } from '@mantine/core'
 import './menu.css'
 
 const menuItems = [
@@ -23,22 +23,34 @@ const Menu = () => {
         {
           menuItems.map((item) => {
             return (
-              <Button key={`${item}-key`} styles={(theme) => ({
-                root: {
-                  backgroundColor: '#212427',
-                  border: 0,
-                  height: 36,
-                  paddingLeft: 20,
-                  paddingRight: 20,
-                  '&:hover': {
-                    backgroundColor: theme.fn.lighten('#212427', 0.05),
+              <Button
+                component="a"
+                key={`${item}-key`}
+                href={`${item.href}`}
+                styles={(theme) => ({
+                  root: {
+                    backgroundColor: '#212427',
+                    color: '#f7f7f7',
+                    fontFamily: 'Titillium Web, sans-serif',
+                    border: 0,
+                    height: 36,
+                    paddingLeft: 20,
+                    paddingRight: 20,
+                    '&:hover': {
+                      backgroundColor: theme.fn.lighten('#212427', 0.05),
+                    },
                   },
-                },
-              })}>{item.title}</Button>
+                })}>{item.title}</Button>
             )
           })
         }
-        <Button variant='gradient' gradient={{ from: 'green', to: 'blue' }}>Resume</Button>
+        <Button variant='gradient' gradient={{ from: 'green', to: 'blue' }} styles={(theme) => ({
+                  root: {
+                    backgroundColor: '#212427',
+                    color: '#f7f7f7',
+                    fontFamily: 'Titillium Web, sans-serif',
+                  },
+                })}>Resume</Button>
       </Group>
     </div>
   )
