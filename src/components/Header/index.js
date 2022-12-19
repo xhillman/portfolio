@@ -19,6 +19,7 @@ const ResponsiveHeader = () => {
         <Menu />
         <Burger opened={isOpen} 
                 onClick={() => setIsOpen(o => !o)} size='sm'
+                color='white'
                 className='burger'
                 />
         <Transition transition='slide-right' 

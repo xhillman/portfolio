@@ -4,11 +4,10 @@
   align-items: center;
   position: fixed;
   top: 0;
+  background-color: #212427;
 }
 
 .header {
-  /* position: sticky;
-  top: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;

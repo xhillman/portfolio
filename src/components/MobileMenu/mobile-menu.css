@@ -9,7 +9,7 @@
   width: min(75vw, 400px);
   z-index: 0;
   height: 50vh;
-  background-color: lightgrey;
+  background-color: #212427;
 }
 
 @media (min-width: 768px) {

@@ -10,7 +10,7 @@ const Hero = () => {
           Hey there, I'm{' '}
           <Text component='span'
           variant='gradient'
-          gradient={{ from: 'blue', to: 'cyan' }}
+          gradient={{ from: 'green', to: 'blue' }}
           inherit>
             Xavier Hillman.
           </Text>
