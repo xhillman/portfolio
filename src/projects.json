@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "WenJobs",
+      "description": "A web3 job board that leverages your LinkedIn connections to streamline the job search process.",
+      "url": "https://wenjobs.xyz",
+      "github": "https://github.com/orgs/Wen-Jobs/repositories",
+      "technologies": ["JavaScript", "React", "Node.js", "Puppeteer", "Ant Design", "CSS"],
+      "image": ""
+    },
+    {
+      "name": "Tech Prep",
+      "description": "An Alexa app that aids software developers in preparing for technical interviews and searching for jobs.",
+      "url": "",
+      "github": "https://github.com/xhillman/tech-prep",
+      "technologies": ["JavaScript", "AWS Lambda", "AWS S3", "AWS SES", "ASK SDK"],
+      "image": ""
+    },
+    {
+      "name": "xPass",
+      "description": "A random password generator that can be customized to produce passwords of varying lengths and complexity.",
+      "url": "",
+      "github": "https://github.com/xhillman/xPass",
+      "technologies": ["JavaScript", "React Native", "Expo"],
+      "image": ""
+    }
+  ]
+}
