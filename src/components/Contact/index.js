@@ -1,8 +1,26 @@
 import { Title, Box, TextInput, Group, Button, Textarea, Text } from "@mantine/core";
-import { useForm } from '@mantine/form'
+// import { useForm } from '@mantine/form'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import './contact.css';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_8b04s9n', 'template_3nv9n0h', form.current, 'yODeKHhdtkltyfJRC')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    // e.target.reset();
+    // reset the form fields after submission
+    form.current.reset();
+  }
+
   return (
     <div className='contact' id='contact'>
       <Title order={2}
@@ -12,19 +30,24 @@ const Contact = () => {
         Contact
       </Title>
       <Box className='contact-box'>
-        <form className='contact-form'>
+        <form className='contact-form'
+              ref={form}
+              onSubmit={sendEmail}>
           <TextInput
-            placeholder='Bill'
+            placeholder='Bill Nye'
             label='Name'
+            name='name'
             styles={() => ({
               label: {
                 color: '#f7f7f7'
               }
             })}
-            className='form-item' />
+            className='form-item'
+             />
           <TextInput
-            placeholder='billnye@scienceguy.com'
+            placeholder='bnye@scienceguy.com'
             label='Email'
+            name='email'
             styles={() => ({
               label: {
                 color: '#f7f7f7',
@@ -35,8 +58,9 @@ const Contact = () => {
             withAsterisk
             required />
           <Textarea
-            placeholder='Just wanted to say hi!'
+            placeholder='Bill! Bill! Bill! Bill!'
             label="Message"
+            name='message'
             styles={() => ({
               label: {
                 color: '#f7f7f7'
@@ -59,15 +83,15 @@ const Contact = () => {
         </form>
       </Box>
       <p className='email-prompt'>
-          or email me at{' '}
-          <Text component='a'
+        or email me at{' '}
+        <Text component='a'
           href='mailto:xhillman13@gmail.com'
           variant='gradient'
           gradient={{ from: 'green', to: 'blue' }}
-          >
-            xhillman13@gmail.com
-          </Text>
-        </p>
+        >
+          xhillman13@gmail.com
+        </Text>
+      </p>
     </div>
   )
 }
