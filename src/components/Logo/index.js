@@ -1,4 +1,4 @@
-import { Text, MantineProvider, Title } from '@mantine/core'
+import { MantineProvider, Title } from '@mantine/core'
 import './logo.css'
 
 const Logo = () => {
@@ -9,6 +9,8 @@ const Logo = () => {
         variant='gradient'
         gradient={{ from: 'green', to: 'blue' }}
         className='logo'
+        component='a'
+        href='#home'
       >
         xh.
       </Title>
