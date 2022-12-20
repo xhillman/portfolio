@@ -29,7 +29,12 @@ const ProjectCard = ({ project }) => {
         </Group>
       </Card.Section>
       <Group className='project-buttons'>
-        <Button className='demo' variant='outline' color='green'>
+        <Button className='demo' 
+                variant='outline' 
+                color='green'
+                component='a'
+                target='_blank'
+                href={project.url}>
           Demo
         </Button>
         <Button className='github'
