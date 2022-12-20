@@ -1,4 +1,5 @@
 import { Group, Button } from '@mantine/core'
+import resume from '../../images/resume.pdf'
 import './menu.css'
 
 const menuItems = [
@@ -15,6 +16,11 @@ const menuItems = [
     href: '#contact',
   }
 ]
+
+const handleClick = () => {
+  console.log('clicked');
+  window.open(resume);
+}
 
 const Menu = () => {
   return (
@@ -44,13 +50,18 @@ const Menu = () => {
             )
           })
         }
-        <Button variant='gradient' gradient={{ from: 'green', to: 'blue' }} styles={(theme) => ({
-                  root: {
-                    backgroundColor: '#212427',
-                    color: '#f7f7f7',
-                    fontFamily: 'Titillium Web, sans-serif',
-                  },
-                })}>Resume</Button>
+        <Button variant='gradient'
+          gradient={{ from: 'green', to: 'blue' }}
+          styles={(theme) => ({
+            root: {
+              backgroundColor: '#212427',
+              color: '#f7f7f7',
+              fontFamily: 'Titillium Web, sans-serif',
+            },
+          })}
+          onClick={handleClick}
+        >Resume
+        </Button>
       </Group>
     </div>
   )

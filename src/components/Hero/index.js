@@ -16,7 +16,7 @@ const Hero = () => {
           </Text>
         </h1>
         <Text className='description'>
-          I'm a software engineer focused on building human-centered products on the web.
+          I'm a software developer focused on building human-centered products on the web.
         </Text>
       </Container>
     </div>
