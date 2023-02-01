@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "MagicGreens",
+      "description": "An e-commerce site that sells organic produce and other healthy foods.",
+      "url": "https://unrivaled-liger-b560c5.netlify.app/",
+      "github": "https://github.com/xhillman/magicgreens",
+      "technologies": ["JavaScript", "React", "Redux", "CSS"],
+      "image": ""
+    },
+    {
       "name": "WenJobs",
       "description": "A web3 job board that leverages your LinkedIn connections to streamline the job search process.",
       "url": "https://wenjobs.xyz",

@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  height: 100%;
+  justify-content: center;
+  height: 100vh;
   width: 100vw;
   background-color: #212427;
 }
 
 @media (min-width: 768px) {
   .projects {
-    padding-top: 6rem;
+    margin-top: 8rem;
+    /* padding-top: 6rem; */
     padding-bottom: 6rem;
-    height: 100%;
+    /* height: 100%; */
   }
 }
 
