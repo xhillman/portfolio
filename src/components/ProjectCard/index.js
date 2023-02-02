@@ -4,8 +4,6 @@ import './project-card.css';
 
 const ProjectCard = ({ project }) => {
 
-  // const image = require(`!!raw-loader!./${project.image}`);
-
   return (
     <Card className='project-card'>
       <Card.Section className='image-section'>

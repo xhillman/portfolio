@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "MagicGreens",
-      "description": "An responsive e-commerce site for a hydroponics farm that sells organic produce and other healthy foods.",
+      "description": "A responsive e-commerce site for a hydroponics farm that sells organic produce and other healthy foods.",
       "url": "https://unrivaled-liger-b560c5.netlify.app/",
       "github": "https://github.com/xhillman/magicgreens",
       "technologies": ["JavaScript", "React", "Redux", "CSS"],

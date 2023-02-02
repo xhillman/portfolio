@@ -16,8 +16,6 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
-    // e.target.reset();
-    // reset the form fields after submission
     form.current.reset();
   }
 
