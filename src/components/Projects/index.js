@@ -5,22 +5,9 @@ import projects from '../../projects.json';
 import './projects.css';
 
 const Projects = () => {
-
-  // const projectData = JSON.parse(projects);
-  // console.log(projectData);
-
-  // console.log(projects);
-  // let projectComps = projects.projects.map(project => {
-  //   return {
-  //     title: project.name,
-  //   }
-  // })
-
-  // console.log(projectComps);
-
   return (
     <div className='projects' id='projects'>
-      <Title order={2} variant='gradient' gradient={{ from: 'green', to: 'blue' }} className='about-title'>Projects</Title>
+      <Title order={2} variant='gradient' gradient={{ from: 'green', to: 'blue' }} className='projects-title'>Projects</Title>
       <div className='projects-container'>
         {
           projects.projects.map((project) => {
