@@ -1,20 +1,23 @@
 import { Card, Image, Text, Group, Button, Badge } from "@mantine/core"
-
+// import magicgreens from '../../images/MagicGreens.png';
 import './project-card.css';
 
 const ProjectCard = ({ project }) => {
+
+  // const image = require(`!!raw-loader!./${project.image}`);
+
   return (
     <Card className='project-card'>
       <Card.Section className='image-section'>
-        <Image />
+        <Image className="project-img" src={project.image} />
       </Card.Section>
       <Card.Section className='card-content'>
-          <Text className='project-title'>
-            {project.name}
-          </Text>
-          <Text className='project-description'>
-            {project.description}
-          </Text>
+        <Text className='project-title'>
+          {project.name}
+        </Text>
+        <Text className='project-description'>
+          {project.description}
+        </Text>
       </Card.Section>
       <Card.Section className='technologies'>
         <Text className='tech-used'>
@@ -29,18 +32,18 @@ const ProjectCard = ({ project }) => {
         </Group>
       </Card.Section>
       <Group className='project-buttons'>
-        <Button className='demo' 
-                variant='outline' 
-                color='green'
-                component='a'
-                target='_blank'
-                href={project.url}>
+        <Button className='demo'
+          variant='outline'
+          color='green'
+          component='a'
+          target='_blank'
+          href={project.url}>
           Demo
         </Button>
         <Button className='github'
-                component='a'
-                target='_blank'
-                href={project.github}>
+          component='a'
+          target='_blank'
+          href={project.github}>
           GitHub
         </Button>
       </Group>
